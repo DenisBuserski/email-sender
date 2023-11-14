@@ -2,10 +2,11 @@
 
 The simple service email-sender reads text files(Logs) and manipulates them depending on the selected command and sends an email depending on the specific command selected by the user.
 
-The files
- <code class="language-java">
+The files are read from:
+
+<code class="language-java">
     public class FileReader
-  </code>
+</code>
 
 
 
