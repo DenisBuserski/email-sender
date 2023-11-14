@@ -2,7 +2,7 @@
 
 The simple service email-sender reads text files(Logs) and manipulates them depending on the selected command and sends an email depending on the specific command selected by the user.
 
-The files are read from [FileReader](https://github.com/DenisBuserski/email-sender/blob/main/src/main/java/org/example/FileReader.java)
+The files are read from [FileReader](https://github.com/DenisBuserski/email-sender/blob/main/src/main/java/org/example/FileReader.java), from there depending on the log file you the logs are processеd depending on the criteria for the specific file. After the files in processed it prepares a custom message and sends it to the select email.
 
 
 
