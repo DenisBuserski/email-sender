@@ -9,6 +9,8 @@ The files are read from [FileReader](https://github.com/DenisBuserski/email-send
 
 ## Log 1
 [Log file 1](https://github.com/DenisBuserski/email-sender/blob/main/src/main/resources/logs-1.txt)
+[Log 1 manipulator](https://github.com/DenisBuserski/email-sender/blob/main/src/main/java/org/example/logmanipulator/Log1.java)
 
 ## Log 2
 [Log file 2](https://github.com/DenisBuserski/email-sender/blob/main/src/main/resources/logs-2.txt)
+[Log 2 manipulator](https://github.com/DenisBuserski/email-sender/blob/main/src/main/java/org/example/logmanipulator/Log2.java)
