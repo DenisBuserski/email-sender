@@ -1,0 +1,6 @@
+AUG  1 18:20:45 username-1 service[login-da]: error: {Could not login user with username: "username-1"}
+AUG  1 18:20:50 username-1 service[login-da]: Successful login for user with username: "username-1"
+AUG  1 18:25:10 username-2 service[login-da]: Successful login for user with username: "username-2"
+AUG  1 18:30:20 username-3 service[login-da]: error: {Could not login user with username: "username-3"}
+AUG  1 18:35:30 username-4 service[login-da]: error: {Could not login user with username: "username-4"}
+AUG  1 18:40:40 username-5 service[login-da]: Successful login for user with username: "username-5"

@@ -1,0 +1,6 @@
+AUG  5 10:10:15 service[monitor-da]: error: {Process "monitor-da" did not start}
+AUG  5 10:20:25 service[monitor-da]: Process "monitor-da" ran with no issues
+AUG  5 10:30:35 service[monitor-da]: Process "monitor-da" ran with no issues
+AUG  5 10:40:45 service[monitor-da]: error: {Process "monitor-da" did not start}
+AUG  5 10:50:55 service[monitor-da]: Process "monitor-da" ran with no issues
+AUG  5 11:00:05 service[monitor-da]: error: {Process "monitor-da" did not start}
