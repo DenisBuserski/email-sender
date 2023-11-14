@@ -4,9 +4,7 @@ The simple service email-sender reads text files(Logs) and manipulates them depe
 
 The files are read from:
 
-<code class="language-java">
-    public class FileReader
-</code>
+<code class="language-java">FileReader</code>
 
 
 
