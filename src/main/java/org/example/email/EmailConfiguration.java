@@ -2,8 +2,8 @@ package org.example.email;
 
 public class EmailConfiguration {
     private static final String smtpHost = "outlook.office365.com";
-    private static final String sender = "java_test_d@outlook.com";
-    private static final String password = "123456789Test";
+    private static final String sender = "test@outlook.com"; // Put the sender email 
+    private static final String password = ""; // Put the sender password 
     private static final String recipient = "denis.buserski@gmail.com";
     private static final int port = 587;
 
