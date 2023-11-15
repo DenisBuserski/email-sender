@@ -1,5 +1,6 @@
 # Email sender 
 
+## What does the service do?
 The simple service email-sender reads a text file(Log), depending on the user's command, processes the file content and sends an email for the specified log. 
 
 The files are read from [FileReader](https://github.com/DenisBuserski/email-sender/blob/main/src/main/java/org/example/FileReader.java), from there depending on the file, the log is processеd following a specific criteria. After a file is processed, a custom message is prepared and sent to the recipient email. All the email configuration(sender, recipient, host and etc.) can be seen [here](https://github.com/DenisBuserski/email-sender/blob/main/src/main/java/org/example/email/EmailConfiguration.java). In my case I used Outlook, so if you want to configure a different email supplier, you have to change that.
@@ -27,3 +28,7 @@ Below you can find information for the 2 logs the service currently processes:
 [Log message](https://github.com/DenisBuserski/email-sender/blob/main/src/main/java/org/example/messagepreparation/Log2Message.java)
 
 ![Output](https://github.com/DenisBuserski/email-sender/blob/main/log-2.png)
+
+
+
+## How to run it on my machine?
