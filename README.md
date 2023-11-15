@@ -10,20 +10,20 @@ Below you can find information for the 2 logs the service currently processes:
 
 
 ### Log 1
-[Log file 1](https://github.com/DenisBuserski/email-sender/blob/main/src/main/resources/logs-1.txt)
+[Log file](https://github.com/DenisBuserski/email-sender/blob/main/src/main/resources/logs-1.txt)
 
-[Log 1 manipulator](https://github.com/DenisBuserski/email-sender/blob/main/src/main/java/org/example/logmanipulator/Log1.java)
+[Log manipulator](https://github.com/DenisBuserski/email-sender/blob/main/src/main/java/org/example/logmanipulator/Log1.java)
 
-[Log 1 message](https://github.com/DenisBuserski/email-sender/blob/main/src/main/java/org/example/messagepreparation/Log1Message.java)
+[Log message](https://github.com/DenisBuserski/email-sender/blob/main/src/main/java/org/example/messagepreparation/Log1Message.java)
 
 ![Output](https://github.com/DenisBuserski/email-sender/blob/main/log-1.png)
 
 
 ### Log 2
-[Log file 2](https://github.com/DenisBuserski/email-sender/blob/main/src/main/resources/logs-2.txt)
+[Log file](https://github.com/DenisBuserski/email-sender/blob/main/src/main/resources/logs-2.txt)
 
-[Log 2 manipulator](https://github.com/DenisBuserski/email-sender/blob/main/src/main/java/org/example/logmanipulator/Log2.java)
+[Log manipulator](https://github.com/DenisBuserski/email-sender/blob/main/src/main/java/org/example/logmanipulator/Log2.java)
 
-[Log 2 message](https://github.com/DenisBuserski/email-sender/blob/main/src/main/java/org/example/messagepreparation/Log2Message.java)
+[Log message](https://github.com/DenisBuserski/email-sender/blob/main/src/main/java/org/example/messagepreparation/Log2Message.java)
 
 ![Output](https://github.com/DenisBuserski/email-sender/blob/main/log-2.png)
