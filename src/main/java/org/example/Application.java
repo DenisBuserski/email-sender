@@ -20,8 +20,8 @@ public class Application {
     public static void main(String[] args) throws IOException, MessagingException {
 //        // Outlook email configuration
 //        String smtpHost = "outlook.office365.com";
-//        String sender = "java_test_d@outlook.com";
-//        String password = "123456789Test";
+//        String sender = "test@outlook.com";
+//        String password = "";
 //
 //        // Recipient's email address
 //        String recipient = "denis.buserski@gmail.com";
@@ -29,7 +29,7 @@ public class Application {
         Properties properties = new Properties();
         properties.put("mail.store.protocol", "imaps");
         properties.put("mail.imaps.host", EmailConfiguration.getSmtpHost());
-        properties.put("mail.imaps.port", "587");
+        properties.put("mail.imaps.port", EmailConfiguration.getPort());
         properties.put("mail.smtp.starttls.enable", "true");
         properties.put("mail.smtp.starttls.required", "true");
 
