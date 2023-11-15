@@ -29,6 +29,7 @@ Below you can find information for the 2 logs the service currently processes:
 
 ![Output](https://github.com/DenisBuserski/email-sender/blob/main/log-2.png)
 
+##
 
 
 ## How to run it on my machine?
