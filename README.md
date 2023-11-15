@@ -33,3 +33,4 @@ Below you can find information for the 2 logs the service currently processes:
 
 
 ## How to run it on my machine?
+To run the service on your machine you would need to clone the repository on you PC. You can run in via IntelliJ, when this part is done start in from [here](https://github.com/DenisBuserski/email-sender/blob/main/src/main/java/org/example/Application.java). When the program starts you can type "1" or "2" depending on the case you want to check. Keep in mind that in order for the service to send an email you have to modify the [email configuration](https://github.com/DenisBuserski/email-sender/blob/main/src/main/java/org/example/email/EmailConfiguration.java). If you still have issues receving the email, you might want to check the [properties](https://github.com/DenisBuserski/email-sender/blob/main/src/main/java/org/example/Application.java).
