@@ -1,6 +1,7 @@
 package org.example.email;
 
 import org.example.exceptions.MessageNotFoundException;
+import org.example.messagepreparation.DBCheckMessage;
 import org.example.messagepreparation.Log1Message;
 import org.example.messagepreparation.Log2Message;
 import org.example.messagepreparation.MessagePreparation;
@@ -23,6 +24,10 @@ public class EmailPreparation {
             }
             case "2" -> {
                 messagePreparation = new Log2Message();
+                return messagePreparation.prepareMessage(session, result);
+            }
+            case "3" -> {
+                messagePreparation = new DBCheckMessage();
                 return messagePreparation.prepareMessage(session, result);
             }
         }
