@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="INFO">
+    <!-- Configuration status attribute sets the logging level for internal Log4j 2 status messages -->
+    <!-- Example status="WARN" / status="DEBUG" / etc. -->
+
+    <Appenders>
+        <!-- Appenders define where log messages should be sent -->
+
+        <Console name="Console" target="SYSTEM_OUT">
+            <!-- Console Appender sends log messages to the console -->
+
+            <PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
+            <!-- PatternLayout defines the format of the log messages -->
+
+        </Console>
+    </Appenders>
+
+    <Loggers>
+        <!-- Loggers define the logging behavior for specific packages or classes -->
+
+        <Root level="debug">
+            <!-- Root Logger is the default logger for all classes -->
+
+            <AppenderRef ref="Console"/>
+            <!-- AppenderRef references the appender (Console) to be used by the logger -->
+
+        </Root>
+    </Loggers>
+</Configuration>

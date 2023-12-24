@@ -1,6 +1,9 @@
 package org.example;
 
-import org.example.dbcheck.Event;
+
+
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.example.dbcheck.EventService;
 import org.example.email.EmailConfiguration;
 import org.example.email.EmailPreparation;
@@ -21,6 +24,7 @@ import java.util.Scanner;
 @Component
 public class ApplicationRunner implements CommandLineRunner {
     private final EventService eventService;
+    private static final Logger LOGGER = LogManager.getLogger(ApplicationRunner.class);
 
     @Autowired
     public ApplicationRunner(EventService eventService) {
@@ -47,6 +51,7 @@ public class ApplicationRunner implements CommandLineRunner {
 
         // Create a mail session
         Session session = Session.getDefaultInstance(properties, null);
+        LOGGER.info("Successfully connected to email server");
 
         List<String> result;
         List<String> file;
@@ -54,17 +59,21 @@ public class ApplicationRunner implements CommandLineRunner {
         LogManipulator logManipulator;
 
         Scanner scanner = new Scanner(System.in);
+        System.out.println("Select task: ");
         String task = scanner.nextLine();
         switch (task) {
             case "1":
                 file = FileReader.readFile("src/main/resources/logs-1.txt");
+                LOGGER.info("Successfully connected to {}", "logs-1.txt");
                 logManipulator = new Log1();
                 result = logManipulator.manipulate(file);
+                LOGGER.info("{} manipulated successfully", "logs-1.txt");
                 message = EmailPreparation.prepareMessage(session, result, "1");
                 EmailPreparation.sendMessage(session, message);
                 break;
             case "2":
                 file = FileReader.readFile("src/main/resources/logs-2.txt");
+                LOGGER.info("Successfully connected to {}", "logs-2.txt");
                 logManipulator= new Log2();
                 result = logManipulator.manipulate(file);
                 message = EmailPreparation.prepareMessage(session, result, "2");
@@ -72,8 +81,10 @@ public class ApplicationRunner implements CommandLineRunner {
                 break;
             case "3":
                 List<String> events = this.eventService.checkEvents();
-                message = EmailPreparation.prepareMessage(session, events, "3");
-                EmailPreparation.sendMessage(session, message);
+                if (!events.isEmpty()) {
+                    message = EmailPreparation.prepareMessage(session, events, "3");
+                    EmailPreparation.sendMessage(session, message);
+                }
                 break;
             default:
                 throw new FileNotFoundException("No files found!");

@@ -1,5 +1,8 @@
 package org.example.email;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+import org.example.ApplicationRunner;
 import org.example.exceptions.MessageNotFoundException;
 import org.example.messagepreparation.DBCheckMessage;
 import org.example.messagepreparation.Log1Message;
@@ -13,6 +16,7 @@ import javax.mail.Transport;
 import java.util.List;
 
 public class EmailPreparation {
+    private static final Logger EMAIL_LOGGER = LogManager.getLogger(EmailPreparation.class);
 
     public static Message prepareMessage(Session session, List<String> result, String caseNumber) throws MessagingException {
         MessagePreparation messagePreparation;
@@ -50,6 +54,6 @@ public class EmailPreparation {
 
         // Close the transport
         transport.close();
-        System.out.println("Email sent successfully!");
+        EMAIL_LOGGER.info("Email send successfully");
     }
 }
