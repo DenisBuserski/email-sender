@@ -27,14 +27,13 @@ For Case 1 and 2 we are checking specifc text files(Logs). The files are read fr
 
 
 ### Case 3
-The logic in this case is to check if we have all 3 events("Event-1", "Event-2", "Event-3") for a particular day.
+The logic in this case is to check if we have all 3 events("Event-1", "Event-2", "Event-3") for a particular day. The logic can be seen [here](https://github.com/DenisBuserski/email-sender/blob/main/src/main/java/org/example/dbcheck/EventServiceImpl.java). If we don't have all 3 events for they day an email will be sent.
 
 ![Output](https://github.com/DenisBuserski/email-sender/blob/main/case-3.png)
+
 
 The service can be extended by adding more cases. For each one of them you would need to have the a specific implementation, how it will be processed, what message needs to be prepared and sent.
 
 
-
-
 ## How to run it on my machine?
-To run the service on your machine you would need to clone the repository on you PC and run it via IntelliJ. When this part is done, start the service from [here](https://github.com/DenisBuserski/email-sender/blob/main/src/main/java/org/example/Application.java). When the program starts you can type "1" or "2" depending on the case you want to check. Keep in mind that in order for the service to send an email you have to modify the [email configuration](https://github.com/DenisBuserski/email-sender/blob/main/src/main/java/org/example/email/EmailConfiguration.java). If you still have issues receving the email, you might want to check the [properties](https://github.com/DenisBuserski/email-sender/blob/main/src/main/java/org/example/Application.java).
+To run the service on your machine you would need to clone the repository on you PC. When this part is done, start the service from [here](https://github.com/DenisBuserski/email-sender/blob/main/src/main/java/org/example/Application.java). When the program starts you can type "1", "2" or "3" depending on the case you want to check. For "Case-3", yo would need to have the DB [setup](https://github.com/DenisBuserski/email-sender/blob/main/src/main/resources/data.sql). Keep in mind that in order for the service to send an email you have to modify the [email configuration](https://github.com/DenisBuserski/email-sender/blob/main/src/main/java/org/example/email/EmailConfiguration.java). 
