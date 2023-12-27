@@ -1,16 +1,12 @@
 # Email sender 
 
 ## What does the service do?
-The simple service email-sender reads a text file(Log), depending on the user's command, processes the file content and sends an email for the specified log. 
+The simple service email-sender does specific checks, depending on the user's command, processes the result and sends an email for if it meets a predefined condition. 
 
-The files are read from [FileReader](https://github.com/DenisBuserski/email-sender/blob/main/src/main/java/org/example/FileReader.java), from there depending on the file, the log is processеd following a specific criteria. After a file is processed, a custom message is prepared and sent to the recipient email. All the email configuration(sender, recipient, host and etc.) can be seen [here](https://github.com/DenisBuserski/email-sender/blob/main/src/main/java/org/example/email/EmailConfiguration.java). In my case I used Outlook, so if you want to configure a different email supplier, you have to change that.
+Currently there are 3 cases:
+For Case 1 and 2 we are checking specifc text files(Logs). The files are read from [FileReader](https://github.com/DenisBuserski/email-sender/blob/main/src/main/java/org/example/FileReader.java), from there depending on the file, the log is processеd following a specific criteria. After a file is processed, a custom message is prepared and sent to the recipient email. All the email configuration(sender, recipient, host and etc.) can be seen [here](https://github.com/DenisBuserski/email-sender/blob/main/src/main/java/org/example/email/EmailConfiguration.java). In my case I used Outlook, so if you want to configure a different email supplier, you have to change that.
 
-The service can be extended by adding more cases, for other different log files. For each one of them you would need to have the file path, how the log will be processed, what message needs to be prepared and sent.
-
-Below you can find information for the 2 logs the service currently processes:
-
-
-### Log 1
+### Case 1
 [Log file](https://github.com/DenisBuserski/email-sender/blob/main/src/main/resources/logs-1.txt)
 
 [Log manipulator](https://github.com/DenisBuserski/email-sender/blob/main/src/main/java/org/example/logmanipulator/Log1.java)
@@ -20,7 +16,7 @@ Below you can find information for the 2 logs the service currently processes:
 ![Output](https://github.com/DenisBuserski/email-sender/blob/main/log-1.png)
 
 
-### Log 2
+### Case 2
 [Log file](https://github.com/DenisBuserski/email-sender/blob/main/src/main/resources/logs-2.txt)
 
 [Log manipulator](https://github.com/DenisBuserski/email-sender/blob/main/src/main/java/org/example/logmanipulator/Log2.java)
@@ -29,7 +25,13 @@ Below you can find information for the 2 logs the service currently processes:
 
 ![Output](https://github.com/DenisBuserski/email-sender/blob/main/log-2.png)
 
-##
+
+### Case 3
+
+
+The service can be extended by adding more cases. For each one of them you would need to have the a specific implementation, how it will be processed, what message needs to be prepared and sent.
+
+
 
 
 ## How to run it on my machine?
