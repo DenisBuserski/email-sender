@@ -3,8 +3,7 @@
 ## What does the service do?
 The simple service email-sender does specific checks, depending on the user's command, processes the result and sends an email for if it meets a predefined condition. 
 
-Currently there are 3 cases:
-For Case 1 and 2 we are checking specifc text files(Logs). The files are read from [FileReader](https://github.com/DenisBuserski/email-sender/blob/main/src/main/java/org/example/FileReader.java), from there depending on the file, the log is processеd following a specific criteria. After a file is processed, a custom message is prepared and sent to the recipient email. All the email configuration(sender, recipient, host and etc.) can be seen [here](https://github.com/DenisBuserski/email-sender/blob/main/src/main/java/org/example/email/EmailConfiguration.java). In my case I used Outlook, so if you want to configure a different email supplier, you have to change that.
+Currently there are 3 cases. For Case 1 and 2 we are checking specifc text files(Logs). The files are read from [FileReader](https://github.com/DenisBuserski/email-sender/blob/main/src/main/java/org/example/FileReader.java), from there depending on the file, the log is processеd following a specific criteria. After a file is processed, a custom message is prepared and sent to the recipient email. All the email configuration(sender, recipient, host and etc.) can be seen [here](https://github.com/DenisBuserski/email-sender/blob/main/src/main/java/org/example/email/EmailConfiguration.java). In my case I used Outlook, so if you want to configure a different email supplier, you have to change that.
 
 ### Case 1
 [Log file](https://github.com/DenisBuserski/email-sender/blob/main/src/main/resources/logs-1.txt)
