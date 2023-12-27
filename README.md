@@ -26,7 +26,7 @@ Currently there are 3 cases. For Case 1 and 2 we are checking specifc text files
 
 
 ### Case 3
-The logic in this case is to check if we have all 3 events("Event-1", "Event-2", "Event-3") for a particular day. The logic can be seen [here](https://github.com/DenisBuserski/email-sender/blob/main/src/main/java/org/example/dbcheck/EventServiceImpl.java). If we don't have all 3 events for they day an email will be sent.
+The logic in this case is to check if we have all 3 events("Event-1", "Event-2", "Event-3") for a particular day. The logic can be seen [here](https://github.com/DenisBuserski/email-sender/blob/main/src/main/java/org/example/dbcheck/EventServiceImpl.java). If we don't have all 3 events for the day an email will be sent.
 
 ![Output](https://github.com/DenisBuserski/email-sender/blob/main/case-3.png)
 
