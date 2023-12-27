@@ -13,10 +13,7 @@
   </component>
   <component name="DBNavigator.Project.DatabaseConsoleManager">
     <connection id="4e0ebd3d-f941-4fa8-809a-c5e8f269dad0">
-      <console name="Basic" type="STANDARD" schema="mysql" session="Main"><![CDATA[select * from test_db.events;
-
-
-truncate test_db.events;]]></console>
+      <console name="Basic" type="STANDARD" schema="mysql" session="Main"><![CDATA[drop database test_db;]]></console>
     </connection>
   </component>
   <component name="DBNavigator.Project.DatabaseEditorStateManager">
