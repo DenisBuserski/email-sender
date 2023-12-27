@@ -27,6 +27,7 @@ For Case 1 and 2 we are checking specifc text files(Logs). The files are read fr
 
 
 ### Case 3
+The logic in this case is to check if we have all 3 events("Event-1", "Event-2", "Event-3") for a particular day.
 
 
 The service can be extended by adding more cases. For each one of them you would need to have the a specific implementation, how it will be processed, what message needs to be prepared and sent.
