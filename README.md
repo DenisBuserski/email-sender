@@ -13,7 +13,7 @@ For Case 1 and 2 we are checking specifc text files(Logs). The files are read fr
 
 [Log message](https://github.com/DenisBuserski/email-sender/blob/main/src/main/java/org/example/messagepreparation/Log1Message.java)
 
-![Output](https://github.com/DenisBuserski/email-sender/blob/main/log-1.png)
+![Output](https://github.com/DenisBuserski/email-sender/blob/main/case-1.png)
 
 
 ### Case 2
@@ -23,12 +23,13 @@ For Case 1 and 2 we are checking specifc text files(Logs). The files are read fr
 
 [Log message](https://github.com/DenisBuserski/email-sender/blob/main/src/main/java/org/example/messagepreparation/Log2Message.java)
 
-![Output](https://github.com/DenisBuserski/email-sender/blob/main/log-2.png)
+![Output](https://github.com/DenisBuserski/email-sender/blob/main/case-2.png)
 
 
 ### Case 3
 The logic in this case is to check if we have all 3 events("Event-1", "Event-2", "Event-3") for a particular day.
 
+![Output](https://github.com/DenisBuserski/email-sender/blob/main/case-3.png)
 
 The service can be extended by adding more cases. For each one of them you would need to have the a specific implementation, how it will be processed, what message needs to be prepared and sent.
 
